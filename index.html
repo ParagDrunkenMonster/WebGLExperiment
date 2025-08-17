@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Test Project</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body {
+				font-family: Monospace;
+				background-color: #fff;
+				color: #fff;
+				margin: 0px;
+				overflow: hidden;
+			}
+
+			.containerWindow {
+				position: absolute;
+				top: 5%;
+				left: 5%;
+				width: 90%;
+				height:90%;
+				background: #fff;
+				z-index: 100;
+			}
+			a {
+				color: #f00;
+			}
+
+			.magnetometer {
+				position: relative;
+				background: #000;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<!--div>
+			<button onclick="showApp()">Click me </button>
+		</div-->
+		<div id="containerWindow" class="containerWindow"></div>
+		<div id="magnetometer" class="magnetometer">Test test</div>
+
+		<script src="scripts/SmartVizXFramework.min.js"></script>
+
+		<script>
+		/*============ Creating a canvas =================*/
+
+			var container = document.getElementById('containerWindow');
+			var application = new SmartVizXFramework.Application(container);
+		</script>
+	</body>
+</html>

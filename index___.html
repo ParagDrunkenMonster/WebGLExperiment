@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Test Project</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body {
+				font-family: Monospace;
+				background-color: #fff;
+				color: #fff;
+				margin: 0px;
+				overflow: hidden;
+			}
+
+			.parentWindow {
+				position: absolute;
+				width: 100%;
+				background: #fff;
+				z-index: 100;
+			}
+			a {
+				color: #f00;
+			}
+
+			.magnetometer {
+				position: relative;
+				background: #000;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<!--div>
+			<button onclick="showApp()">Click me </button>
+		</div-->
+		<div id="parentWindow">
+			<div id="containerWindow" class="containerWindow"></div>
+		</div>
+
+		<!--div id="magnetometer" class="magnetometer">Test test</div-->
+
+		<script src="dev_scripts/HttpFileLoader.js"></script>
+
+		<script src="dev_scripts/Settings.js"></script>
+		<script src="dev_scripts/InputHandler.js"></script>
+		<script src="dev_scripts/Math.js"></script>
+		<script src="dev_scripts/Vector3.js"></script>
+		<script src="dev_scripts/AABB.js"></script>
+		<script src="dev_scripts/WebGLContext.js"></script>
+		<script src="dev_scripts/Matrix4.js"></script>
+		<script src="dev_scripts/Utils.js"></script>
+		<script src="dev_scripts/Material.js"></script>
+		<script src="dev_scripts/Mesh.js"></script>
+		<script src="dev_scripts/MeshInstance.js"></script>
+		<script src="dev_scripts/BinaryLoader.js"></script>
+		<script src="dev_scripts/Application.js"></script>
+
+		<script>
+		/*============ Creating a canvas =================*/
+
+			var container = document.getElementById('containerWindow');
+			var application = new SmartVizXFramework.Application(container);
+		</script>
+	</body>
+</html>
